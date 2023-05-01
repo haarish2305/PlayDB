@@ -1,0 +1,33 @@
+Data types :-
+    * char
+    * string
+    * int, long long
+    * double
+    * boolean
+
+Create, delete database.
+Insert, update, delete data from database.
+
+//////////////////// SCHEMA ///////////////////////
+
+* Schema metadata -> 8 bytes.
+    * Type of file (1 byte)
+* Database name   -> 32 bytes.
+* Schema size     -> 4 bytes.
+* Attributes :-
+    * Attribute name (16 bytes) and type (1 byte).
+* Foreign db name -> 32 bytes
+* Primary keys    -> 4 bytes
+    * ID1, ID2 . . . . .
+* Foreign keys    -> 4 bytes
+    * ID1, ID2, . . . . 
+
+///////////////////// DATA /////////////////////////
+
+* Number of tuples -> 4 bytes
+* Size of tuple    -> 4 bytes
+* Tuples
+
+////////////////////// Implement insert query ////////////////////////
+* When creating database, make sure foreign db exist.
+    * As of now for testing, this check do not exist.
